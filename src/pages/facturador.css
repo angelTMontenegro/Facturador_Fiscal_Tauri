@@ -1,0 +1,119 @@
+html, body, #root {
+    height: 100%;
+    margin: 0;
+}
+
+.divPrincipal{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.menuFacturador{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+}
+
+.menuLeft{
+    width: 80%;
+    height: 100%;
+}
+
+.infoCliente{
+    display: grid;
+    grid-template-columns: 20% 30% 12% 30%;
+    column-gap: 2px;
+    row-gap: 8px;
+    align-items: center;
+}
+
+.labelInfoSale{
+    margin: 1px 1px;
+    justify-self: right;
+}
+
+.inputInfoSale{
+    width: 100%;
+    padding: 4px;
+    font-size: 13px;
+    box-sizing: border-box;
+    height: 20px;
+    margin: 1px 1px;
+    background-color:rgb(111, 111, 207);
+}
+
+.formFacturador{
+    margin: 1px 0px;
+}
+
+.items{
+    display: block;
+    text-align: center;
+    background-color: rgb(111, 111, 207);
+}
+
+.divVentas{
+    height: 60%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: beige;
+}
+
+.divItem{
+    display: grid;
+    grid-template-columns: 10% 10% 55% 10% 15%;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.labelItem{
+    text-align: center;
+    padding: 5px 0px;
+    box-sizing: border-box;
+    width: 100%;
+    border-left: black 1px solid;
+}
+
+.inputDiv{
+    display: grid;
+    grid-template-columns: 10% 10% 55% 10% 15%;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    justify-items: stretch;
+}
+
+.inputItem{
+    border: black 1px solid;
+    text-align: center;
+    padding: 5px 0px;
+    width: 100%;
+}
+
+.botonIngresarVenta{
+    cursor: pointer;
+    background-color: aqua;
+}
+
+.foot {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 8px;
+  background: white;
+  
+}
+
+.menuRight{
+    background-color: aqua;
+    width: 20%;
+    height: 70%;
+}

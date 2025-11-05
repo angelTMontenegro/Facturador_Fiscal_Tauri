@@ -1,0 +1,12 @@
+.Menu{
+    margin: 0px 0;
+    border-bottom: 1px solid black;  
+}
+
+.menuBoton{
+    border: none;
+    padding: 5px 20px;
+    border-radius: 1px;
+    cursor: pointer;
+    font-size: 12px;
+}
