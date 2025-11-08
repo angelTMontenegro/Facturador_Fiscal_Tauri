@@ -1,9 +1,11 @@
-# facturadorapp
+# FacturadorApp
 
-Una aplicación de escritorio hecha con **Tauri + React + TypeScript** para gestionar facturación local en tu negocio. Incluye base de datos SQLite, interfaz de usuario moderna y opción de sincronización con un backend externo.
+Una aplicación de escritorio desarrollada con **Tauri + React + TypeScript** para gestionar facturación local en negocios.  
+Incluye base de datos SQLite, interfaz moderna y opción de sincronización con un backend externo.
 
 ---
-## Características
+
+## 🚀 Características
 
 - Gestión de productos (agregar, editar y eliminar)
 - Registro de ventas
@@ -14,36 +16,50 @@ Una aplicación de escritorio hecha con **Tauri + React + TypeScript** para gest
 - Posibilidad de sincronizar información con un backend externo
 
 ---
-## Tecnologías utilizadas  
-- Frontend: React, Vite, TypeScript  
-- Backend de escritorio: Tauri (Rust)  
-- Base de datos local: SQLite  
-- Sistema operativo objeto: Windows  
+
+## 🛠️ Tecnologías utilizadas
+
+- **Frontend:** React, Vite, TypeScript  
+- **Backend (escritorio):** Tauri (Rust)  
+- **Base de datos:** SQLite  
+- **Sistema operativo objetivo:** Windows  
 
 ---
 
-## Estado del proyecto  
-- ✅ Funcionalidad básica de añadir productos, gestionar stock y generar venta  
-- 🚧 Aun en desarrollo: generación de reportes diarios en PDF, botón de sincronización al backend externo, mejoras en la interfaz ui, facilidades y funcionalidades extras como edición de stock, etc. 
+## 📌 Estado del proyecto
+
+- ✅ Funcionalidad básica de añadir productos, gestionar stock y generar ventas  
+- 🚧 En desarrollo: reportes diarios en PDF, sincronización con backend, mejoras de interfaz y nuevas funciones (edición de stock, etc.)
 
 ---
 
-## Instalación y ejecución local  
-1. Clonar el repositorio:  
+## 🖼️ Vista previa del proyecto
 
- git clone https://github.com/tu-usuario/facturadorapp.git
- cd facturadorapp
- Instala dependencias:
- npm install
- Ejecuta la aplicación en modo desarrollo:
- npm run tauri dev
- Nota: Para ejecutar la app en Windows 7 y superiores, asegúrate de cumplir con los requisitos de Tauri para la plataforma.
+A continuación se muestran algunas capturas del funcionamiento de la aplicación:
 
-Este proyecto está licenciado bajo la MIT License.
+### Registro de ventas
+![Registro de ventas](src/assets/docs/images/controladorpage.png)
 
-Contacto
+### Buscador de productos
+![Buscador de productos](src/assets/docs/images/searchproduct.png)
 
-Desarrollador: Ángel Montenegro – Estudiante de UNSAM, lic. en ciencia de datos.
-GitHub: https://github.com/angelTMontenegro
+### Registro de productos
+![Registro de productos](src/assets/docs/images/controladorpage.png)
 
-Email: angel.montenegro092@gmail.com
+### Reportes de ventas
+![Reportes de ventas](src/assets/docs/images/reportespage.png)
+
+---
+
+## ⚙️ Instalación y ejecución local
+
+```bash
+# Clonar el repositorio
+git clone https://github.com/angelTMontenegro/facturadorapp.git
+cd facturadorapp
+
+# Instalar dependencias
+npm install
+
+# Ejecutar en modo desarrollo
+npm run tauri dev
