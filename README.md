@@ -38,7 +38,7 @@ Incluye base de datos SQLite, interfaz moderna y opción de sincronización con 
 A continuación se muestran algunas capturas del funcionamiento de la aplicación:
 
 ### Registro de ventas
-![Registro de ventas](src/assets/docs/images/controladorpage.png)
+![Registro de ventas](src/assets/docs/images/facturadorpage.png)
 
 ### Buscador de productos
 ![Buscador de productos](src/assets/docs/images/searchproduct.png)
