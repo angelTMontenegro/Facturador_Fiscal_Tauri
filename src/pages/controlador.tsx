@@ -1,8 +1,9 @@
-import Menu from "../components/ui/menu";
+import Menu from "../components/ui/header";
 import "./controlador.css"
 import Boton from "../components/ui/botones";
 import { useState } from "react";
 import { invoke } from "@tauri-apps/api/core";
+import Foot from "../components/ui/footer";
 
 function Facturador(){
 
@@ -44,7 +45,6 @@ function Facturador(){
 
     return (
         <div>
-            <Menu/>
             <div className="menuShop">
                 <form action="">
                     <h1>Agregar producto</h1>
@@ -86,7 +86,7 @@ function Facturador(){
                 />  
 
             </div>
-
+            
         </div>
     )
 }

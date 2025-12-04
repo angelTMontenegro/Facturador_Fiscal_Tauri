@@ -35,10 +35,16 @@ Incluye base de datos SQLite, interfaz moderna y opción de sincronización con 
 
 ## 🖼️ Vista previa del proyecto
 
-A continuación se muestran algunas capturas del funcionamiento de la aplicación:
+A continuación se muestran algunas capturas del funcionamiento de la interfaz visual de la aplicación:
 
 ### Registro de ventas
-![Registro de ventas](src/assets/docs/images/facturadorpage.png)
+![Registro de ventas](src/assets/docs/images/login.png)
+
+### Registro de ventas
+![Registro de ventas](src/assets/docs/images/home.png)
+
+### Registro de ventas
+![Registro de ventas](src/assets/docs/images/facturador.png)
 
 ### Buscador de productos
 ![Buscador de productos](src/assets/docs/images/searchproduct.png)

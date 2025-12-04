@@ -1,4 +1,4 @@
-import Menu from "../components/ui/menu";
+import Menu from "../components/ui/header";
 import { invoke } from "@tauri-apps/api/core";
 import { useState, useEffect } from "react";
 import DatePicker from "react-datepicker";
@@ -42,7 +42,7 @@ export default function Reporte() {
 
   return (
     <div className="p-6">
-      <Menu />
+      
       <h1>Reportes</h1>
 
       <div

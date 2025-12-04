@@ -1,9 +1,9 @@
-import Menu from "../components/ui/menu"
+import Menu from "../components/ui/header"
 
 export default function Pendientes(){
     return(
         <div>
-            <Menu/>
+            
             <h1>Pendientes</h1>
         </div>
     )

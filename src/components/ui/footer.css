@@ -1,0 +1,21 @@
+.Foot {
+    border-top: 1px solid black;
+    display: flex;           /* Para utilizar justify-content y align-items. */
+    gap: 5px;
+    justify-content: center; /* Centra los elementos horizontalmente. */
+    align-items: center;     /* Centra los elementos verticalmente. */
+}
+
+.Foot label {
+    margin: 0 2px;           /* márgenes pequeños entre etiquetas e inputs */
+}
+
+.Foot input {
+    padding: 4px;
+    font-size: 13px;
+    box-sizing: border-box;
+    height: 20px;
+    margin: 0 2px;
+    background-color: rgb(255, 255, 255);
+    border: 0px;  /* Quito los bordes para mayor estilización. */
+}

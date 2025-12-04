@@ -1,0 +1,95 @@
+/* MAIN */
+.login {
+    min-height: 100vh;    /* LE DAS ALTURA REAL */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f4f6f9;
+    
+}
+
+/* CARD */
+.loginCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    min-width: 420px;
+}
+
+/* ICONO PRINCIPAL */
+.icon-user {
+    width: 110px;
+    height: 110px;
+    color: #6f6fcf;
+}
+
+/* CONTENEDOR INPUT (usuario + contraseña) */
+.contenedor_usuario,
+.contenedor_contraseña {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    width: 100%;
+    height: 44px;
+
+    padding: 0 14px;
+    border: 1px solid #cfcfcf;
+    border-radius: 12px;
+
+    background: white;
+    transition: border-color 0.2s;
+}
+
+.contenedor_usuario:hover,
+.contenedor_contraseña:hover {
+    border-color: #6f6fcf;
+}
+
+/* ICONOS */
+.icon-user2,
+.icon-lock {
+    width: 22px;
+    height: 22px;
+    color: #6f6fcf;
+}
+
+/* INPUTS */
+.contenedor_usuario input,
+.contenedor_contraseña input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background: transparent;
+}
+
+/* BOTÓN */
+.loginCard button {
+    margin-top: 10px;
+    background-color: rgb(33, 150, 243);
+    color: white;
+    padding: 12px 22px;
+    font-size: 18px;
+
+    border: 0;
+    border-radius: 8px;
+
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.loginCard button:hover {
+    background-color: rgb(25, 130, 210);
+}
+
+.loginCard button:active {
+    transform: scale(0.97);
+}

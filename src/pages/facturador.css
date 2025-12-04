@@ -1,119 +1,188 @@
-html, body, #root {
-    height: 100%;
-    margin: 0;
+/* Contenedor principal de la página. Contiene divs left y right. */
+.facturador {
+  display: grid;
+  grid-template-columns: 80% 20%; 
+  height: 100%; 
+  min-height: 0;
+  padding: 20px;
+  background-color: rgb(246, 246, 244);
 }
 
-.divPrincipal{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+/* columna principal izquierda */
+.menuLeft {
+  display: flex; /* Sigue usando flex para organizar *su* contenido interno */
+  flex-direction: column;
+  min-height: 0;
 }
 
-.menuFacturador{
-    display: flex;
-    justify-content: flex-start;
-    width: 100%;
-    height: 100%;
+/* Labels e inputs con información del cliente. */
+.clientCard {
+  display: grid;
+  grid-template-columns: 20% 30% 12% 30%;
+  column-gap: 8px;
+  row-gap: 8px;
+  align-items: center;
+  padding: 5px;
+  margin-bottom: 8px;
+  border: 1px solid black;
+  border-radius: 10px;
 }
 
-.menuLeft{
-    width: 80%;
-    height: 100%;
+.clientCard label {
+  justify-self: right;
+  margin: 1px;
 }
 
-.infoCliente{
-    display: grid;
-    grid-template-columns: 20% 30% 12% 30%;
-    column-gap: 2px;
-    row-gap: 8px;
-    align-items: center;
+.clientCard input {
+  width: 100%;
+  padding: 4px;
+  font-size: 13px;
+  box-sizing: border-box;
+  height: 24px;
+  margin: 1px;
+  background-color: rgb(111, 111, 207);
 }
 
-.labelInfoSale{
-    margin: 1px 1px;
-    justify-self: right;
+/* etiqueta de items */
+.items {
+  display: block;
+  text-align: center;
+  background-color: rgb(111, 111, 207);
+  padding: 6px 0;
+  margin-bottom: 6px;
+  color: white;
 }
 
-.inputInfoSale{
-    width: 100%;
-    padding: 4px;
-    font-size: 13px;
-    box-sizing: border-box;
-    height: 20px;
-    margin: 1px 1px;
-    background-color:rgb(111, 111, 207);
+/* Sección con información de ventas */
+.salesCard {
+  flex: 1;        /* ocupa todo el espacio vertical disponible dentro de menuLeft */
+  min-height: 0;  /* importante para permitir overflow interno */
+  overflow-y: auto;
+  background-color: rgb(255, 255, 255);
+  padding: 8px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-sizing: border-box;
 }
 
-.formFacturador{
-    margin: 1px 0px;
+/* Fila dentro de sales card que contiene labels que describen categorias de información de los productos. */
+.salesCardLabel{
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  background: rgba(0,0,0,0.05);
+  font-weight: bold;
 }
 
-.items{
-    display: block;
+/*Configuración de estilo para labels dentro de salesCard */
+.salesCardLabel label{
+  text-align: center;
+  padding: 5px 0;
+  width: 100%;
+  border-left: 1px solid black;
+  box-sizing: border-box;
+}
+
+/* Fila dentro de sales card que contiene inputs y boton para agregar productos. */
+.salesCardOptions {
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  
+}
+
+/* Fila de items al agregar productos. */
+.divItem {
+  display: grid;
+  grid-template-columns: 10% 10% 55% 10% 15%;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  align-items: center;
+}
+
+/* lista del carrito (puede crecer) */
+.cartList {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 8px;
+}
+
+/* items internos */
+.inputItem {
+    border: 1px solid black;
     text-align: center;
-    background-color: rgb(111, 111, 207);
-}
-
-.divVentas{
-    height: 60%;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: beige;
-}
-
-.divItem{
-    display: grid;
-    grid-template-columns: 10% 10% 55% 10% 15%;
-    gap: 0;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    padding: 5px 0;
     width: 100%;
 }
 
-.labelItem{
-    text-align: center;
-    padding: 5px 0px;
-    box-sizing: border-box;
-    width: 100%;
-    border-left: black 1px solid;
-}
-
-.inputDiv{
-    display: grid;
-    grid-template-columns: 10% 10% 55% 10% 15%;
-    gap: 0;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    width: 100%;
-    justify-items: stretch;
-}
-
-.inputItem{
-    border: black 1px solid;
-    text-align: center;
-    padding: 5px 0px;
-    width: 100%;
-}
-
-.botonIngresarVenta{
+/* boton confirmar estilo */
+.botonIngresarVenta {
     cursor: pointer;
     background-color: aqua;
 }
 
-.foot {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 8px;
-  background: white;
-  
+/* Seccion de totales dentro de la columna izquierda. */
+.totalsCard {
+    background: white;
+    margin-top: 12px;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
-.menuRight{
+.totalsCard h3 {
+    margin-left: 8px;
+    font-size: 20px;
+}
+
+/*Grid de etiquetas de la sección totales. */
+.labelInputTotals {
+    display: grid;
+    grid-template-columns: 20% 30% 12% 30%;
+    column-gap: 8px;
+    row-gap: 8px;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+/*Div que contiene labels e inputs. */
+.labelInputTotals label {
+    justify-self: right;
+    margin: 1px;
+}
+
+.labelInputTotals input {
+    width: 100%;
+    padding: 4px;
+    font-size: 13px;
+    box-sizing: border-box;
+    height: 24px;
+    margin: 1px;
+    background-color: rgb(111, 111, 207);
+}
+
+.botonTotals {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 8px;
+}
+
+.foot_boton button {
+    font-size: 15px;
+    padding: 8px;
+    background-color: rgb(42, 236, 42);
+}
+
+/* area derecha */
+.menuRight {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
     background-color: aqua;
-    width: 20%;
-    height: 70%;
+    padding: 8px;
+    box-sizing: border-box;
 }
