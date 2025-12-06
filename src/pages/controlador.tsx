@@ -1,9 +1,7 @@
-import Menu from "../components/ui/header";
 import "./controlador.css"
 import Boton from "../components/ui/botones";
 import { useState } from "react";
 import { invoke } from "@tauri-apps/api/core";
-import Foot from "../components/ui/footer";
 
 function Facturador(){
 

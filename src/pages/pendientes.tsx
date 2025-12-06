@@ -1,4 +1,3 @@
-import Menu from "../components/ui/header"
 
 export default function Pendientes(){
     return(

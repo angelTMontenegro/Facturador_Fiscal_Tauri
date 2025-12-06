@@ -1,4 +1,3 @@
-import Menu from "../components/ui/header";
 import { invoke } from "@tauri-apps/api/core";
 import { useState, useEffect } from "react";
 import DatePicker from "react-datepicker";
