@@ -1,5 +1,5 @@
 /* MAIN */
-.login {
+.adduser {
     min-height: 100vh;    /* LE DAS ALTURA REAL */
     display: flex;
     align-items: center;
@@ -9,7 +9,7 @@
 }
 
 /* CARD */
-.loginCard {
+.adduserCard {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,15 +24,15 @@
 }
 
 /* ICONO PRINCIPAL */
-.icon-user {
+.adduserIconUser {
     width: 110px;
     height: 110px;
     color: #6f6fcf;
 }
 
 /* CONTENEDOR INPUT (usuario + contraseña) */
-.contenedor_usuario,
-.contenedor_contraseña {
+.adduserUser,
+.adduserPasword {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -54,16 +54,16 @@
 }
 
 /* ICONOS */
-.icon-user2,
-.icon-lock {
+.adduserIconUser2,
+.adduserIconLock {
     width: 22px;
     height: 22px;
     color: #6f6fcf;
 }
 
 /* INPUTS */
-.contenedor_usuario input,
-.contenedor_contraseña input {
+.adduserUser input,
+.adduserPasword input {
     flex: 1;
     border: none;
     outline: none;
@@ -72,7 +72,7 @@
 }
 
 /* BOTÓN */
-.botonIniciarSesion {
+.botonAddUser {
     margin-top: 10px;
     background-color: rgb(33, 150, 243);
     color: white;
@@ -86,29 +86,10 @@
     transition: background 0.2s, transform 0.1s;
 }
 
-.botonIniciarSesion:hover {
+.botonAddUser:hover {
     background-color: rgb(25, 130, 210);
 }
 
-.botonIniciarSesion:active {
-    transform: scale(0.97);
-}
-
-.botonAgregarUsuario{
-    margin-right: auto;
-    border: 0px solid black;
-    background-color: #ffffff;
-    font-size: 14px;
-
-    color: rgb(25, 130, 210);
-    cursor: pointer;
-    transition: color 0.2s, transform 0.1s;
-}
-
-.botonAgregarUsuario:hover{
-    color: #6f6fcf;
-}
-
-.botonAgregarUsuario:active{
+.botonAddUser:active {
     transform: scale(0.97);
 }

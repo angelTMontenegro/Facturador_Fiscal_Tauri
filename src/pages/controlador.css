@@ -15,7 +15,7 @@
   grid-template-columns: 30% 70%; 
   gap: 4px;
   justify-self: end;
-  width: 80%;
+  width: 90%;
 
   background-color: #f2f2f2;
   border: 1px solid black;
@@ -51,7 +51,6 @@
   gap: 4px;
   background: transparent;
   border: none;
-  padding: 6px 14px;
   border-radius: 6px;
   cursor: pointer;
   font-size: 14px;
