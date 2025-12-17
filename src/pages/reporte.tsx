@@ -40,7 +40,7 @@ export default function Reporte() {
   }, [filter, fromDate, toDate]);
 
   return (
-    <div className="p-6">
+    <main className="reporte">
       
       <h1>Reportes</h1>
 
@@ -108,6 +108,6 @@ export default function Reporte() {
           )}
         </tbody>
       </table>
-    </div>
+    </main>
   );
 }

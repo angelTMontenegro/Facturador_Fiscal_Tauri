@@ -18,16 +18,18 @@ pub fn init_db() {
 }
 
 #[tauri::command]
-pub fn add_stock(name: String, price: i64, stock: i64) -> Result<i64, String> {
+pub fn add_stock(name: String, price: i64, stock: i64, description: String) -> Result<i64, String> {
     use rusqlite::params;
     let conexion = Connection::open("my-db.db3").map_err(|e| e.to_string())?;
 
-    conexion
-        .execute(
-            "INSERT OR IGNORE INTO stocks (name, price, stock) VALUES (?1, ?2, ?3)",
-            params![name, price, stock],
-        )
-        .map_err(|e| e.to_string())?;
+    let affected = conexion.execute(
+        "INSERT OR IGNORE INTO stocks (name, price, stock, description) VALUES (?1, ?2, ?3, ?4)",
+        params![name, price, stock, description],
+    )?;
+
+    if affected == 0 {
+        return Err("No se insertó el producto (duplicado o error de datos)".to_string());
+    }
 
     let id = conexion.last_insert_rowid();
     println!("Producto agregado: {} (id {})", name, id);

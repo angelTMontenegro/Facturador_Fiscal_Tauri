@@ -1,5 +1,4 @@
 import "./controlador.css"
-import Boton from "../components/ui/botones";
 import { useState } from "react";
 import { invoke } from "@tauri-apps/api/core";
 
@@ -12,7 +11,7 @@ function Facturador(){
         description:""
     })
 
-    async function add_stock(name: string, price: string, stock: string) {
+    async function add_stock(name: string, price: string, stock: string, description: string) {
         try {
                 const insertedId = await invoke<number>("add_stock", {
                 name: name,
@@ -78,7 +77,7 @@ function Facturador(){
                     />    
                     
                     <button 
-                        onClick={() => add_stock(stock.nameStock, stock.price, stock.stockQuantity)}>
+                        onClick={() => add_stock(stock.nameStock, stock.price, stock.stockQuantity, stock.description)}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                         <circle cx="12" cy="12" r="10"/>
                         <line x1="12" y1="8" x2="12" y2="16"/>
